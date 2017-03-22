@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GdI-fw-abY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vacation View Controller-->
+        <scene sceneID="tBP-ss-M3c">
+            <objects>
+                <viewController id="GdI-fw-abY" customClass="VacationViewController" customModule="Vacation_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sMX-xu-5VF"/>
+                        <viewControllerLayoutGuide type="bottom" id="AEo-JA-rVw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VFF-Gv-XwL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1v-Qs-Eqd">
+                                <rect key="frame" x="158" y="30" width="59" height="22"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIg-pM-m3d" customClass="GVRPanoramaView">
+                                <rect key="frame" x="0.0" y="102" width="375" height="252.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lac-IU-daN" customClass="GVRVideoView">
+                                <rect key="frame" x="0.0" y="414.5" width="375" height="252.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip to Goa, May 2017" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-oF-iiw">
+                                <rect key="frame" x="16" y="82" width="343" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Yl-l6-gaV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Yl-l6-gaV"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant Safari in Africa with Family" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="avb-df-dOZ">
+                                <rect key="frame" x="16" y="394.5" width="343" height="15"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lac-IU-daN" secondAttribute="trailing" id="6C4-nx-SMa"/>
+                            <constraint firstItem="D4d-oF-iiw" firstAttribute="centerX" secondItem="jIg-pM-m3d" secondAttribute="centerX" id="8RF-zJ-qmw"/>
+                            <constraint firstItem="AEo-JA-rVw" firstAttribute="top" secondItem="lac-IU-daN" secondAttribute="bottom" id="9if-Wy-vHv"/>
+                            <constraint firstItem="lac-IU-daN" firstAttribute="leading" secondItem="VFF-Gv-XwL" secondAttribute="leading" id="DKN-vB-9kn"/>
+                            <constraint firstItem="avb-df-dOZ" firstAttribute="top" secondItem="jIg-pM-m3d" secondAttribute="bottom" constant="40" id="E6d-Eb-dIw"/>
+                            <constraint firstItem="lac-IU-daN" firstAttribute="top" secondItem="jIg-pM-m3d" secondAttribute="bottom" id="EaV-DU-VSj"/>
+                            <constraint firstItem="jIg-pM-m3d" firstAttribute="height" secondItem="lac-IU-daN" secondAttribute="height" id="FZF-dl-Tcg"/>
+                            <constraint firstItem="jIg-pM-m3d" firstAttribute="height" secondItem="VFF-Gv-XwL" secondAttribute="height" multiplier="0.5" id="Igt-IN-1hn"/>
+                            <constraint firstItem="D4d-oF-iiw" firstAttribute="top" secondItem="sMX-xu-5VF" secondAttribute="bottom" constant="40" id="LJA-PT-sk9"/>
+                            <constraint firstItem="D4d-oF-iiw" firstAttribute="leading" secondItem="VFF-Gv-XwL" secondAttribute="leadingMargin" id="SqE-L9-0Xz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D4d-oF-iiw" secondAttribute="trailing" id="TU3-xH-Lcy"/>
+                            <constraint firstItem="lac-IU-daN" firstAttribute="top" secondItem="avb-df-dOZ" secondAttribute="bottom" constant="5" id="YvR-69-8HL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="avb-df-dOZ" secondAttribute="trailing" id="cBF-BV-nDC"/>
+                            <constraint firstItem="x1v-Qs-Eqd" firstAttribute="top" secondItem="sMX-xu-5VF" secondAttribute="bottom" constant="10" id="cSr-wV-689"/>
+                            <constraint firstItem="jIg-pM-m3d" firstAttribute="top" secondItem="D4d-oF-iiw" secondAttribute="bottom" constant="5" id="dV9-nx-saK"/>
+                            <constraint firstItem="D4d-oF-iiw" firstAttribute="top" secondItem="x1v-Qs-Eqd" secondAttribute="bottom" constant="30" id="gRb-r5-0kD"/>
+                            <constraint firstItem="x1v-Qs-Eqd" firstAttribute="centerX" secondItem="VFF-Gv-XwL" secondAttribute="centerX" id="mYr-6o-n7N"/>
+                            <constraint firstItem="avb-df-dOZ" firstAttribute="leading" secondItem="VFF-Gv-XwL" secondAttribute="leadingMargin" id="pnY-f9-yEK"/>
+                            <constraint firstItem="lac-IU-daN" firstAttribute="height" secondItem="VFF-Gv-XwL" secondAttribute="height" multiplier="0.5" id="rTI-i3-bTQ"/>
+                            <constraint firstItem="jIg-pM-m3d" firstAttribute="top" secondItem="sMX-xu-5VF" secondAttribute="bottom" constant="20" id="rZD-lq-3Yo"/>
+                            <constraint firstItem="jIg-pM-m3d" firstAttribute="leading" secondItem="VFF-Gv-XwL" secondAttribute="leading" id="t3J-7T-IMV"/>
+                            <constraint firstAttribute="trailing" secondItem="jIg-pM-m3d" secondAttribute="trailing" id="vLf-mZ-Osn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8RF-zJ-qmw"/>
+                                <exclude reference="LJA-PT-sk9"/>
+                                <exclude reference="Igt-IN-1hn"/>
+                                <exclude reference="rZD-lq-3Yo"/>
+                                <exclude reference="EaV-DU-VSj"/>
+                                <exclude reference="rTI-i3-bTQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageLabel" destination="D4d-oF-iiw" id="Y4X-ee-xxK"/>
+                        <outlet property="imageVRView" destination="jIg-pM-m3d" id="Dzf-fn-CAG"/>
+                        <outlet property="videoLabel" destination="avb-df-dOZ" id="h4r-Lh-z4N"/>
+                        <outlet property="videoVRView" destination="lac-IU-daN" id="zyy-QT-EJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xp1-U0-BAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="296"/>
+        </scene>
+    </scenes>
+</document>
